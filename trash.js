@@ -9,10 +9,23 @@ var mainState = {
     //sets the gravtiy of the player
      this.player.body.gravity.y = 600;
 
-     for(var i = 0; i < level.length; i++){
-     for(var j = 0; j < level[i].length; j++){
-     var wall = game.add.sprite(30+20*j, 30+20*i, 'wall');
-     this.walls.add(wall);
-     wall.body.immovable = true;
+    for(var i = 0; i < level.length; i++){
+     
+        for(var j = 0; j < level[i].length; j++){
+    
+        if(level[i][j] === 't'){
+            var mainState = game.add.sprite(30+20*j, 30+20*i, 'trash');
+            this.trashes.add(trash);
+            trash.body.immovable = true;
+            } 
         }
     }
+    
+    if (player isTouching(player)) {
+                takeTrash: function(player, trash){
+        this.score++;
+        trash.kill();
+        },
+        
+    }
+    
