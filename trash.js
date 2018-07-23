@@ -21,8 +21,8 @@ var mainState = {
         }
     }
     
-    if (player isTouching(player)) {
-                takeTrash: function(player, trash){
+    if (player isTouching(trash)) {
+        takeTrash: function(player, trash){
         this.score++;
         trash.kill();
         },
