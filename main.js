@@ -74,7 +74,7 @@ var mainState = {
             'x                xxxxx                                         x',
             'x                                                              x',
             'x                                                              x',
-            'x              h                           x                   x',
+            'x              h                          x                    x',
             'x                                                              x',
             'x                                                              x',
             'x            xxxxx                                             x',
