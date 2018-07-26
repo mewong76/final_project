@@ -135,7 +135,7 @@ var mainState = {
         game.physics.arcade.collide(this.player, this.trash, this.takeTrash, null, this)
         
         
-        if(this.score >=5){
+        if(this.score >=4){
             var text = game.add.text(game.world.centerX, game.world.centerY, "You won" , {
                 fill: 'white'
             });
